@@ -5,7 +5,7 @@ Este es un workspace de ROS donde donde objetivo principal es desarrollar un alg
 
 **- Fernando Vela Hidalgo** (GitHub: [github.com/fervh](https://github.com/fervh))
 
-**- Javier Gomez Eguizabal** (GitHub: 
+**- Javier Gomez Eguizabal** (GitHub: [github.com/Javierge15](https://github.com/Javierge15))
 
 **- Alberto Gil Cuadrado** (GitHub: 
 
