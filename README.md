@@ -41,3 +41,7 @@ Este proyecto es parte de la asignatura "Robots Móviles" en la Universidad Carl
 - ### Mapas
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
+
+## [CODIGO DE EXPLORACION COMENTADO](Codigo.py)
+
+## VIDEOS
