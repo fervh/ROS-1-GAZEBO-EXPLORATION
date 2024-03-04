@@ -9,6 +9,9 @@ Este es un workspace de ROS donde donde objetivo principal es desarrollar un alg
 
 **- Alberto Gil Cuadrado (GitHub: nO TIENE)**
 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/480px-Gazebo_logo_without_text.svg.png" width = 20%/>
+</p>
 
 Este proyecto es parte de la asignatura "Robots Móviles" en la Universidad Carlos III de Madrid (UC3M).
 
