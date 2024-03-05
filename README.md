@@ -80,23 +80,57 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 ## RESULTADOS OBTENIDOS
 ### ENTORNO 1
 - ### Mapa
+  **Secuencia de exploración**
+<p align="center">
+  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/649f8a59-108f-45d1-8778-4841ea99d76d" width = 80%/>
+</p>
 
+  **Mapa Final**
+<p align="center">
+  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/d56f5687-3190-4adf-b401-ce667c8d96fe" width = 80%/>
+</p>
 
 - ### Tiempo de exploracion
+  33''
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 2
 - ### Mapa
+  **Secuencia de exploración**
+<p align="center">
+  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/a3b7125d-db9e-41e7-b0c5-abc60d3dbc4a" width = 60%/>
+</p>
+
+  **Mapa Final**
+<p align="center">
+  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/494f6ea6-0d4a-424d-b420-37673f70c9e2" width = 60%/>
+</p>
+
 - ### Tiempo de exploracion
+  3' 50''
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 3
 - ### Mapa
+  **Secuencia de exploración**
+<p align="center">
+  <img src="" width = 60%/>
+</p>
+
+  **Mapa Final**
+
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 4
 - ### Mapa
+  **Secuencia de exploración**
+<p align="center">
+  <img src="" width = 20%/>
+</p>
+
+  **Mapa Final**
+
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
