@@ -74,10 +74,10 @@ if __name__ == "__main__":
     rospy.Subscriber("/map", OccupancyGrid, map_callback)
 
     # Publicar el topic "/borde_libre" para celdas con valor 0 y pegadas a un vecino -1
-    borde_libre_pub = rospy.Publisher("/borde_libre", PointCloud, queue_size=10)
+    borde_libre_pub = rospy.Publisher("/borde_libre", PointCloud, queue_size=1)
     # Publicar el topic "/borde_ocupado" para celdas con valor 100 y pegadas a un vecino -1
-    borde_ocupado_pub = rospy.Publisher("/borde_ocupado", PointCloud, queue_size=10)
+    borde_ocupado_pub = rospy.Publisher("/borde_ocupado", PointCloud, queue_size=1)
     # Publicar el topic float "/porcentaje_borde" para el porcentaje de borde
-    porcentaje_borde_pub = rospy.Publisher("/porcentaje_borde", Float32, queue_size=10)
+    porcentaje_borde_pub = rospy.Publisher("/porcentaje_borde", Float32, queue_size=1)
     
     rospy.spin()
