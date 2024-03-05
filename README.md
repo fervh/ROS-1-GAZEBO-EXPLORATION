@@ -100,6 +100,5 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
-## [CODIGO DE EXPLORACION COMENTADO](Codigo.py)
 
 ## VIDEOS
