@@ -18,8 +18,19 @@ Este proyecto es parte de la asignatura "Robots Móviles" en la Universidad Carl
 ----
 
 ## ALGORITMO DE EXPLORACION
+sudo apt-get install ros-noetic-dwa-local-planner
+
+escenario
+rviz
+gmapping
+movebase
+exploration
 
 ## CRITERIO DE PARADA 
+### Código: [porcentaje_borde_node.py](porcentaje_borde_node.py)
+
+El código superior es un nodo de ros diseñado para evaluar el criterio de parada del algoritmo de exploración explicado con anterioridad.
+
 
 ## RESULTADOS OBTENIDOS
 ### ENTORNO 1
