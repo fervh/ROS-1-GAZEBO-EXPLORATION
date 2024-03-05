@@ -136,3 +136,7 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
 
 ## VIDEOS
+
+[path_follower.webm](https://github.com/fervh/Webots-Simulator/assets/55854056/836a29f1-5e6e-4470-bc68-1dae830199a0)
+
+https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/blob/main/media/vid/escenario1.mkv
