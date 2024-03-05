@@ -16,40 +16,61 @@ Este es un workspace de ROS donde donde objetivo principal es desarrollar un alg
 Este proyecto es parte de la asignatura "Robots Móviles" en la Universidad Carlos III de Madrid (UC3M).
 
 ----
+## PUESTA EN MARCHA DEL ALGORITMO Y ENTORNOS
+En la Terminal 1:
+```bash
+roslaunch ros_autonomous_exploration moviles.launch
+```
+
+En la Terminal 2:
+```bash
+rosrun ros_autonomous_exploration map_save_node.py
+```
+
+En la Terminal 3:
+```bash
+rostopic echo /porcentaje_borde
+```
+
+
+<p align="center">
+  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/1ef31e40-4414-434f-a0bc-c7932722b5ae" width = 100%/>
+</p>
+
+----
 
 ## ALGORITMO DE EXPLORACION
 sudo apt-get install ros-noetic-dwa-local-planner
 
-escenario
-rviz
-gmapping
-movebase
-exploration
+----
 
 ## CRITERIO DE PARADA 
 ### Código: [porcentaje_borde_node.py](porcentaje_borde_node.py)
 
 El código superior es un nodo de ros diseñado para evaluar el criterio de parada del algoritmo de exploración explicado con anterioridad.
 
+----
 
 ## RESULTADOS OBTENIDOS
 ### ENTORNO 1
-- ### Mapas
+- ### Mapa
+
+
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 2
-- ### Mapas
+- ### Mapa
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 3
-- ### Mapas
+- ### Mapa
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 4
-- ### Mapas
+- ### Mapa
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
