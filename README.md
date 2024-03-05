@@ -7,7 +7,7 @@ Este es un workspace de ROS donde donde objetivo principal es desarrollar un alg
 
 **- Javier Gómez Eguizábal (GitHub: [github.com/Javierge15](https://github.com/Javierge15))**
 
-**- Alberto Gil Cuadrado (GitHub: nO TIENE)**
+**- Alberto Gil Cuadrado (GitHub: [github.com/Alberto-gca](https://github.com/Alberto-gca))**
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/480px-Gazebo_logo_without_text.svg.png" width = 20%/>
