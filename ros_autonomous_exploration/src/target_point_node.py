@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-# Este nodo se encarga de publicar el punto más cercano al centroide de la nube de puntos del borde del mapa
-
+# Para elegir el target point, se calcula la mediana de los puntos de la nube de puntos y se elige el punto más cercano a la mediana
 import rospy
 from geometry_msgs.msg import TransformStamped, Point
 from sensor_msgs.msg import PointCloud

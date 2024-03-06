@@ -75,7 +75,22 @@ rostopic echo /porcentaje_borde
 ----
 
 ## ALGORITMO DE EXPLORACIÓN
-Tanto el el algoritmo de exploración como el criterio de parada se encuentra en un sistema diseñado de manera modular, por lo que el código se encuentra dividido en cuatro scripts dentro del paquete de ROS, en los que cada uno realiza una función primordial dentro del algoritmo. Estos scripts son los siguientes:
+Tanto el el algoritmo de exploración como el criterio de parada se encuentra en un sistema diseñado de manera modular, por lo que el código se encuentra dividido en cuatro scripts dentro del paquete de ROS, en los que cada uno realiza una función primordial dentro del algoritmo. 
+
+
+El algoritmo de exploración seleccionado se basa en navegar hacia el punto medio del mapa. Este proceso implica varios pasos:
+
+1. **Escaneo del mapa:** Se realiza un escaneo del mapa para identificar los puntos del borde. Estos puntos se clasifican en dos categorías: aquellos que están libres y aquellos que están ocupados. La información sobre estos puntos se publica en los topics "/borde_libre" y "/borde_ocupado".
+
+2. **Publicación de datos:** En el topic "/borde_libre", se publican las coordenadas de las celdas del borde que están libres (con un valor de 0) y pegadas a un vecino (-1). Mientras que en el topic "/borde_ocupado", se publican las coordenadas de las celdas del borde que están ocupadas (con un valor de 100) y pegadas a un vecino (-1).
+
+3. **Cálculo del punto medio del mapa:** Se utiliza la información de los puntos del borde para calcular el punto medio del mapa. Este punto medio es el más cercano al centroide de la nube de puntos del borde del mapa. La coordenada de este punto medio se publica en el topic "/middle_point".
+
+4. **Navegación hacia el punto medio:** El nodo de exploración (exploration_node) se suscribe al topic "/middle_point" para recibir las coordenadas del punto medio del mapa. Una vez que recibe esta información, el robot navega hacia este punto utilizando el sistema de navegación correspondiente.
+
+En resumen, el algoritmo de exploración se basa en la identificación de los puntos del borde del mapa, el cálculo del punto medio utilizando estos puntos, y la navegación hacia este punto medio para explorar el entorno de manera eficiente.
+
+Estos scripts son los siguientes:
 
 ### exploration_node
 [exploration_node.py](ros_autonomous_exploration/src/exploration_node.py)

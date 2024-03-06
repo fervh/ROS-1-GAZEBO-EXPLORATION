@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# Este nodo se encarga de publicar los puntos del borde del mapa en los topics "/borde_libre" y "/borde_ocupado"
-
+# Se escanea el mapa para encontrar los puntos del borde y se publican en los topics "/borde_libre" y "/borde_ocupado"
+# Siendo el topic "/borde_libre" para celdas con valor 0 y pegadas a un vecino -1 y el topic "/borde_ocupado" para celdas con valor 100 y pegadas a un vecino -1
 import rospy
 from nav_msgs.msg import OccupancyGrid
 from geometry_msgs.msg import Point

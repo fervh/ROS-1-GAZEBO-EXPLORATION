@@ -2,6 +2,10 @@
 
 # Este nodo se encarga de navegar hacia el punto medio del mapa
 
+# redacta en un comentario una explicación del algoritmo de exploración seleccionado
+# El algoritmo de exploración seleccionado es el de navegar hacia el punto medio del mapa. Este algoritmo se encarga de navegar hacia el punto medio del mapa, el cual es publicado por el nodo target_point_node. El punto medio del mapa es el punto más cercano al centroide de la nube de puntos del borde del mapa. El nodo exploration_node se suscribe al topic /middle_point para recibir el punto medio del mapa y navegar hacia él.
+
+
 import rospy
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
