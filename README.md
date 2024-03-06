@@ -13,59 +13,83 @@ Este es un workspace de ROS donde donde objetivo principal es desarrollar un alg
   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/480px-Gazebo_logo_without_text.svg.png" width = 20%/>
 </p>
 
-Este proyecto es parte de la asignatura "Robots Móviles" en la Universidad Carlos III de Madrid (UC3M).
+Este proyecto es parte de la asignatura "Robo### ENTORNO 4
+- ### Mapa
+- ### Tiempo de exploracion
+- ### Porcentaje de zona explorada
+
+
+## VIDEOS
+ts Móviles" en la Universidad Carlos III de Madrid (UC3M).
 
 ----
+
+## CONTENIDO DEL REPOSITORIO
+
+Este repositorio contiene el paquete de ROS 1 Noetic con los nodos y launch files necesarios para la exploración autónoma.
+
+La organización del paquete es la siguiente:
+
+
+### NODOS:
+
+- La carpeta `src` contiene los siguientes nodos:
+  - [exploration_node.py](ros_autonomous_exploration/src/exploration_node.py): Utiliza el paquete move_base para enviar metas de navegación al robot implementado.
+  - [porcentaje_borde_node.py](ros_autonomous_exploration/src/porcentaje_borde_node.py): Determina el porcentaje de exploración del mapa y crea listas para almacenar los puntos del borde del mapa y mensajes de nube de puntos para cada tipo de celda.
+  - [target_point_node.py](ros_autonomous_exploration/src/target_point_node.py): Procesa el mensaje de nube de puntos del nodo anterior y determina el punto medio hacia donde se dirigirá el robot.
+  - [map_save_node.py](ros_autonomous_exploration/src/map_save_node.py): Comprueba el criterio de parada, guarda el mapa y detiene todos los procesos.
+
+### LAUNCH FILE:
+
+- La carpeta `launch` contiene el archivo [moviles.launch](ros_autonomous_exploration/launch/moviles.launch) que se utiliza para iniciar el algoritmo de exploración.
+
+### RVIZ CONFIG:
+
+- Tambien tiene una configuración por defecto de Rviz [default.rviz](ros_autonomous_exploration/rviz/default.rviz)
+
+
 ## PUESTA EN MARCHA DEL ALGORITMO Y ENTORNOS
 
-### Reqiere Ubuntu 20.04 con ROS Noetic
+### Requiere Ubuntu 20.04 con ROS Noetic
 
-En la Terminal 1:
+#### - En la Terminal 1:
 ```bash
 roslaunch ros_autonomous_exploration moviles.launch
 ```
+(Aquí se puede cambiar el escenario que se quiere lanzar)
 
-En la Terminal 2:
+#### - En la Terminal 2:
 ```bash
 rosrun ros_autonomous_exploration map_save_node.py
 ```
+(Aquí se puede elegir el nombre del mapa que se va a guardar)
 
-En la Terminal 3:
+#### - En la Terminal 3:
 ```bash
 rostopic echo /porcentaje_borde
 ```
+(Sirve para tener conocimiento del porcentaje de borde escaneado)
 
-
-<p align="center">
-  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/1ef31e40-4414-434f-a0bc-c7932722b5ae" width = 100%/>
-</p>
-
-
-Si da algún error prueba a ejecutar el siguiente comando desde terminal:
-```bash
-sudo apt-get install ros-noetic-dwa-local-planner
-```
 
 ----
 
 ## ALGORITMO DE EXPLORACIÓN
-Tanto el el algoritmo de exploración como el criterio de parada se encuentra en un sistema diseñado de manera modular, por lo que el código se encuentra dividido en cuatro scripts en los que cada uno realiza una función primordial dentro del algoritmo. Estos scripts son los siguientes:
-
+Tanto el el algoritmo de exploración como el criterio de parada se encuentra en un sistema diseñado de manera modular, por lo que el código se encuentra dividido en cuatro scripts dentro del paquete de ROS, en los que cada uno realiza una función primordial dentro del algoritmo. Estos scripts son los siguientes:
 
 ### exploration_node
-[exploration_node](exploration_node.py)
+[exploration_node.py](ros_autonomous_exploration/src/exploration_node.py)
 Utiliza el paquete move_base para enviar metas de navegación al robot implementado.
 
 ### porcentaje_borde_node
-[porcentaje_borde_node.py](porcentaje_borde_node.py)
+[porcentaje_borde_node.py](ros_autonomous_exploration/src/porcentaje_borde_node.py)
 Determina cual es el porcentaje de exploración del mapa. Crea listas para almacenar los puntos del borde del mapa y mensajes de nube de puntos para cada tipo de celda.
 
 ### target_point_node
-[target_point_node](target_point_node.py)
+[target_point_node.py](ros_autonomous_exploration/src/target_point_node.py)
 Procesa el mensaje de nube de puntos del nodo anterior y determina el punto medio de esta, hacia donde se dirigirá posteriormente el robot.
 
 ### map_save_node
-[map_save_node](map_save_node.py)
+[map_save_node.py](ros_autonomous_exploration/src/map_save_node.py)
 Comprueba el criterio de parada, guarda el mapa y detiene todos los procesos. La llamada a este código determina el final de la ejecución del algoritmo.
 
 
@@ -73,12 +97,12 @@ Comprueba el criterio de parada, guarda el mapa y detiene todos los procesos. La
 
 ## CRITERIO DE PARADA 
 
-En el momento que el porcentaje del borde en contacto con obstáculos supera el deseado y determinado en el código con respecto al borde en contacto con zona inexplorada se asume el mapa como completado, se guarda y se detienen todos los procesos. Para cada caso se puede definir el porcentaje deseado. En este caso se ha determinado un porcentaje mínimo del 80%
+En el momento que el porcentaje del borde en contacto con obstáculos supera el deseado y determinado en el código con respecto al borde en contacto con zona inexplorada se asume el mapa como completado, se guarda y se detienen todos los procesos. Para cada caso se puede definir el porcentaje deseado. 
 
 ----
 
 ## RESULTADOS OBTENIDOS
-### ENTORNO 1
+### ESCENARIO 1
 - ### Mapa
   Capturas del proceso de mapeado
   <p align="center">
@@ -98,7 +122,7 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
   Se alcanza para este mapa un porcentaje de exploración del 95%.
 
-### ENTORNO 2
+### ESCENARIO 2
 - ### Mapa
   Capturas del proceso de mapeado
   <p align="center">
@@ -118,7 +142,7 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
   Se alcanza para este mapa un porcentaje de exploración del 85%.
   
-### ENTORNO 3
+### ESCENARIO 3
 - ### Mapa
 Capturas del proceso de mapeado
 
@@ -131,10 +155,3 @@ El tiempo de exploración del mapa es de 2 minutos y 55 segundos. El proceso se 
 
 Se alcanza para este mapa un porcentaje de exploración del 80%.
 
-### ENTORNO 4
-- ### Mapa
-- ### Tiempo de exploracion
-- ### Porcentaje de zona explorada
-
-
-## VIDEOS

@@ -1,0 +1,22 @@
+<launch>
+    <!-- Incluye el nodo de rviz con la configuración por defecto -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_autonomous_exploration)/rviz/default.rviz" />
+
+    <!-- Añade los launch files de gmapping, turtlebot3_escenario1 y move_base -->
+    <include file="$(find turtlebot3_slam)/launch/turtlebot3_gmapping.launch" />
+
+    <include file="$(find robots_moviles)/launch/turtlebot3_escenario1.launch" />
+
+    <include file="$(find turtlebot3_navigation)/launch/move_base.launch" />
+
+    <!-- Añade los nodos de porcentaje_borde_node, exploration_node y target_point_node -->
+    <node pkg="ros_autonomous_exploration" type="porcentaje_borde_node.py" name="porcentaje_borde_node" />
+
+    <node pkg="ros_autonomous_exploration" type="exploration_node.py" name="exploration_node" />
+
+    <node pkg="ros_autonomous_exploration" type="target_point_node.py" name="target_point_node" />
+
+    
+
+
+</launch>
