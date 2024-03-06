@@ -80,63 +80,57 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 ## RESULTADOS OBTENIDOS
 ### ENTORNO 1
 - ### Mapa
-  **Secuencia de exploración**
-<p align="center">
-  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/649f8a59-108f-45d1-8778-4841ea99d76d" width = 80%/>
-</p>
-
-  **Mapa Final**
-<p align="center">
-  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/d56f5687-3190-4adf-b401-ce667c8d96fe" width = 80%/>
-</p>
+  Capturas del proceso de mapeado
+  <p align="center">
+    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map1_generacion.jpg" width = 70%/>
+  </p>
+  Una vez completado, el mapa se presenta de la siguiente manera:
+  <p align="center">
+    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map1_generado.jpg" width = 70%/>
+  </p>
 
 - ### Tiempo de exploracion
-  33''
+  El tiempo de exploración del mapa es de 33 segundos. El proceso se puede ver en el siguiente video:
+  <p align="center">
+    <video width="440" height="240" controls>
+      <source src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/vid/escenario1.mkv" type="video/mp4">
+    </video>
+  </p>
 - ### Porcentaje de zona explorada
+
+  Se alcanza para este mapa un porcentaje de exploración del 95%.
 
 ### ENTORNO 2
 - ### Mapa
-  **Secuencia de exploración**
-<p align="center">
-  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/a3b7125d-db9e-41e7-b0c5-abc60d3dbc4a" width = 60%/>
-</p>
-
-  **Mapa Final**
-<p align="center">
-  <img src="https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/148269271/494f6ea6-0d4a-424d-b420-37673f70c9e2" width = 60%/>
-</p>
+  Capturas del proceso de mapeado
+  <p align="center">
+    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map2_generacion.jpg" width = 70%/>
+  </p>
+  Una vez completado, el mapa se presenta de la siguiente manera:
+  <p align="center">
+    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map2_generado.jpg" width = 70%/>
+  </p>
 
 - ### Tiempo de exploracion
-  3' 50''
+  El tiempo de exploración del mapa es de 3 minutos y 50 segundos. El proceso se puede ver en el siguiente video de forma acelerada:
+  <p align="center">
+    <video width="440" height="240" controls>
+      <source src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/vid/Escenario2.mp4" type="video/mp4">
+    </video>
+  </p>
 - ### Porcentaje de zona explorada
 
+  Se alcanza para este mapa un porcentaje de exploración del 85%.
+  
 ### ENTORNO 3
 - ### Mapa
-  **Secuencia de exploración**
-<p align="center">
-  <img src="" width = 60%/>
-</p>
-
-  **Mapa Final**
-
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
 ### ENTORNO 4
 - ### Mapa
-  **Secuencia de exploración**
-<p align="center">
-  <img src="" width = 20%/>
-</p>
-
-  **Mapa Final**
-
 - ### Tiempo de exploracion
 - ### Porcentaje de zona explorada
 
 
 ## VIDEOS
-
-[path_follower.webm](https://github.com/fervh/Webots-Simulator/assets/55854056/836a29f1-5e6e-4470-bc68-1dae830199a0)
-
-https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/blob/main/media/vid/escenario1.mkv
