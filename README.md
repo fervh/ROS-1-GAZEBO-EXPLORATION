@@ -91,7 +91,9 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
 - ### Tiempo de exploracion
   El tiempo de exploración del mapa es de 33 segundos. El proceso se puede ver en el siguiente video:
+  
   [escenario1.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/d970587c-2e94-408a-9040-90e5184a3983)
+  
 - ### Porcentaje de zona explorada
 
   Se alcanza para este mapa un porcentaje de exploración del 95%.
