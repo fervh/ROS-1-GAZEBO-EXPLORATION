@@ -165,3 +165,15 @@ El tiempo de exploración del mapa es de 2 minutos y 55 segundos. El proceso se 
 
 Se alcanza para este mapa un porcentaje de exploración del 80%.
 
+
+### ESTUDIO
+- ### Mapa
+
+[escenario3.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/8087233f-e98f-4f4a-9c0e-0cacd7027fd0)
+
+- ### Tiempo de exploracion
+El tiempo de exploración del mapa es de 4 minutos y 10 segundos. El proceso se puede ver en el siguiente video de forma acelerada:
+
+- ### Porcentaje de zona explorada
+
+Se alcanza para este mapa un porcentaje de exploración del 90%.
