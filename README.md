@@ -91,11 +91,7 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
 - ### Tiempo de exploracion
   El tiempo de exploración del mapa es de 33 segundos. El proceso se puede ver en el siguiente video:
-  <p align="center">
-    <video width="440" height="240" controls>
-      <source src="media/vid/escenario1.mkv" type="video/mp4">
-    </video>
-  </p>
+  [escenario1.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/d970587c-2e94-408a-9040-90e5184a3983)
 - ### Porcentaje de zona explorada
 
   Se alcanza para este mapa un porcentaje de exploración del 95%.
@@ -113,19 +109,22 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
 - ### Tiempo de exploracion
   El tiempo de exploración del mapa es de 3 minutos y 50 segundos. El proceso se puede ver en el siguiente video de forma acelerada:
-  <p align="center">
-    <video width="440" height="240" controls>
-      <source src="media/vid/Escenario2.mp4" type="video/mp4">
-    </video>
-  </p>
+  [escenario2.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/70e7e5ba-62ca-4ea8-b854-515ec065cf7c)
+
 - ### Porcentaje de zona explorada
 
   Se alcanza para este mapa un porcentaje de exploración del 85%.
   
 ### ENTORNO 3
 - ### Mapa
+Capturas del proceso de mapeado
+
 - ### Tiempo de exploracion
+El tiempo de exploración del mapa es de 2 minutos y 55 segundos. El proceso se puede ver en el siguiente video de forma acelerada:
+[escenario3.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/8087233f-e98f-4f4a-9c0e-0cacd7027fd0)
 - ### Porcentaje de zona explorada
+
+Se alcanza para este mapa un porcentaje de exploración del 80%.
 
 ### ENTORNO 4
 - ### Mapa
@@ -134,10 +133,3 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 
 
 ## VIDEOS
-
-[escenario1.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/d970587c-2e94-408a-9040-90e5184a3983)
-
-[escenario2.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/70e7e5ba-62ca-4ea8-b854-515ec065cf7c)
-
-
-[escenario3.webm](https://github.com/fervh/ROS-1-GAZEBO-EXPLORATION/assets/55854056/8087233f-e98f-4f4a-9c0e-0cacd7027fd0)
