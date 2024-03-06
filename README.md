@@ -82,18 +82,18 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 - ### Mapa
   Capturas del proceso de mapeado
   <p align="center">
-    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map1_generacion.jpg" width = 70%/>
+    <img src="media/img/map1_generacion.jpg" width = 70%/>
   </p>
   Una vez completado, el mapa se presenta de la siguiente manera:
   <p align="center">
-    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map1_generado.jpg" width = 70%/>
+    <img src="media/img/map1_generado.jpg" width = 70%/>
   </p>
 
 - ### Tiempo de exploracion
   El tiempo de exploración del mapa es de 33 segundos. El proceso se puede ver en el siguiente video:
   <p align="center">
     <video width="440" height="240" controls>
-      <source src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/vid/escenario1.mkv" type="video/mp4">
+      <source src="media/vid/escenario1.mkv" type="video/mp4">
     </video>
   </p>
 - ### Porcentaje de zona explorada
@@ -104,18 +104,18 @@ En el momento que el porcentaje del borde en contacto con obstáculos supera el 
 - ### Mapa
   Capturas del proceso de mapeado
   <p align="center">
-    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map2_generacion.jpg" width = 70%/>
+    <img src="media/img/map2_generacion.jpg" width = 70%/>
   </p>
   Una vez completado, el mapa se presenta de la siguiente manera:
   <p align="center">
-    <img src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/img/map2_generado.jpg" width = 70%/>
+    <img src="media/img/map2_generado.jpg" width = 70%/>
   </p>
 
 - ### Tiempo de exploracion
   El tiempo de exploración del mapa es de 3 minutos y 50 segundos. El proceso se puede ver en el siguiente video de forma acelerada:
   <p align="center">
     <video width="440" height="240" controls>
-      <source src="/workspaces/ROS-1-GAZEBO-EXPLORATION/media/vid/Escenario2.mp4" type="video/mp4">
+      <source src="media/vid/Escenario2.mp4" type="video/mp4">
     </video>
   </p>
 - ### Porcentaje de zona explorada
