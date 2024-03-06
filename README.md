@@ -1,4 +1,5 @@
-# ROS-1-GAZEBO-EXPLORATION
+# Proyecto de exploracion en Gazebo ROS 1
+
 Este es un workspace de ROS donde donde objetivo principal es desarrollar un algoritmo de exploración autónoma utilizando un robot en un entorno desconocido.
 
 ### AUTORES:
